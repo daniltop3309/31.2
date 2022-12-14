@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hdr</title>
+    <link rel="stylesheet" href="{% static './style.css' %}">
+</head>
+<body>
+    <div class="section1">
+        <div class="header">
+            <div class="header__logo">
+                <img src="./static/logo.png" alt="">
+            </div>
+            <div class="header__smedia">
+                <button class="header__smedia-1">
+                    <img src="./static/google.png" alt="">
+                </button>
+                <button class="header__smedia-1">
+                    <img src="/static/inst.png" alt="">
+                </button>
+                <button class="header__smedia-1">
+                    <img src="/static/in.png" alt="">
+                </button>
+            </div>
+            <ul class="header__menu">
+                <li class="header__menu_item">О нас</li>
+                <li class="header__menu_item">Услуги</li>
+                <li class="header__menu_item">Специалисты</li>
+                <li class="header__menu_item">Пациентам</li>
+                <li class="header__menu_item">Контакты</li>
+            </ul>
+            <div class="header__gps">
+                <img src="/static/gps.png" alt="" class="gps">
+                <div class="header__gps-text">Чебоксары, <br> Энтузиастов 1А</div>
+            </div>
+            <div class="header__data">
+                <img src="/static/data.png" alt="" class="data">
+                <div class="header__data-text">с <p>09:00 - 20:00,</p> пн-сб</div>
+            </div>
+            <div class="header__phone">
+                <img src="/static/phone.png" alt="" class="phone">
+                <div class="header__phone-text">+7900 333 10 40</div>
+            </div>
+            <button class="header__btn">
+                <div class="header__btn-text">Заказать звонок</div>
+            </button>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="heal" style="background: url(/static/nurse.png); background-repeat: no-repeat; background-size: cover; ">
+            <div class="heal__text">
+                <div class="heal__text-head">— Стоматология в Чебоксарах</div>
+                <div class="heal__text-title">Лечение зубов <br> в тот же день</div>
+                <div class="heal__text-main">Мы проведем полную консультацию, <br> профессиональную гигиену полости рта, <br>
+                    лечение зубов и десен</div>
+                <button class="head__text-btn">
+                    <div class="heal__text-btn-text">Записаться на приём</div>
+                </button>
+            </div>
+            <div class="heal__cards">
+                <div class="heal__card1">
+                    <img src="/static/1.png" alt="" class="card">
+                    <div class="heal__card-text">Команда квалифицированных <br> специалистов </div>
+                </div>
+                <div class="heal__card">
+                    <img src="/static/2.png" alt="" class="card">
+                    <div class="heal__card-text">Команда квалифицированных <br> специалистов </div>
+                </div>
+                <div class="heal__card2">
+                    <img src="/static/3.png" alt="" class="card">
+                    <div class="heal__card-text">Команда квалифицированных <br> специалистов </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'main.html' %}
+    {% include 'reg.html' %}
+    {% include 'index1.html' %}
+    {% include 'footer.html' %}
+</body>
+</html>

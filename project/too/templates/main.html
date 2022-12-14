@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="section3">
+        <div class="service">
+            <div class="service__text">
+                <div class="service__text-title">Услуги</div>
+                <div class="service__text-main">Мы постарались сделать прайс, <br> 
+                    максимально простым и понятным. </div>
+            </div>
+            <div class="service__cardline">
+                {% for i in '9111' %}
+                <button class="service__cardline-btn">
+                    <img src="./static/Group 23.png" alt="">
+                    <div class="service__cardline-btn-text">Лечение зубов</div>
+                </button>
+                {% endfor %}
+            </div>
+            <div class="service__cardline">
+                {% for i in '922' %}
+                <button class="service__cardline-btn">
+                    <img src="./static/Group 23.png" alt="">
+                    <div class="service__cardline-btn-text">Лечение зубов</div>
+                </button>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="section4">
+        <div class="rights">
+            <div class="rights__text">Нам доверяют пациенты</div>
+            <div class="rights__cards">
+                <div class="rights__cards-num">
+                    <div class="rights__cards-num-num">1</div>
+                    <div class="rights__cards-num-title">Честные цены, без <br> хитрых уловок</div>
+                    <div class="rights__cards-num-main">Фиксируем цены в плане лечения, <br> не повышаем в процессе. 
+                        </div>
+                </div>
+                <div class="rights__cards-num">
+                    <div class="rights__cards-num-num">1</div>
+                    <div class="rights__cards-num-title">Честные цены, без <br> хитрых уловок</div>
+                    <div class="rights__cards-num-main">Фиксируем цены в плане лечения, <br> не повышаем в процессе. 
+                        </div>
+                </div>
+                <div class="rights__cards-num">
+                    <div class="rights__cards-num-num">1</div>
+                    <div class="rights__cards-num-title">Честные цены, без <br> хитрых уловок</div>
+                    <div class="rights__cards-num-main">Фиксируем цены в плане лечения, <br> не повышаем в процессе. 
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
